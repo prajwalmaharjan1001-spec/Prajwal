@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Contact us</h1> -->
+     <form action="mailto:prajwalmaharjan1001@gmail.com" method="post" enctype="text/plain">
+        <p>
+        <label for="username">Username</label>
+         <!-- <input value="Hello Prajwal" minlength="16" maxlength="17" type="text" id="username" name="username"> -->
+        <input type="text" placeholder="Prajwal" id="username" name="username">
+        </p>
+        <p>
+            <label for="email">Email&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="email" name="email">
+        </p>
+        <p>
+            <h4>Select Your Gender</h4>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+        </p>
+           <p>
+            <h4>Select Your Habit</h4>
+            <label for="sing">Sing</label>
+            <input type="checkbox" name="habit" value="sing" id="sing">
+            <label for="dance">Dance</label>
+            <input type="checkbox" name="habit" value="dance" id="dance">
+        </p>
+        <p>
+            <label for="date">Date of Joining</label>
+            <input type="date" name="join" id="date">
+        </p>
+        <label for="country">Select Your Country</label>
+        <select name="country" id="country">
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+        </select>
+        <p>
+            <textarea placeholder="Write a message" name="message" rows="10" cols="20" id="msg"></textarea>
+        </p>
+        <p>
+            <input type="hidden">
+        </p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+     </form>
+
+</body>
+</html>
