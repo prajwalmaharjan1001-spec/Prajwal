@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-    /* tag selector */
-    header h1{
-        color: blue;
-    }
-    /* section{
-        color: aqua;
-    } */
-     #sec-1{
-        color: red;
-     }
-     #sec-2{
-        color: greenyellow;
-     }
-     .nx h1{
-        color: red;
-     }
-     .nx p{
-        color: blue;
-     }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 50px;
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      .details{
+        padding: 0 10px;
+      }
+      h1 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-align: center;
+      }
+      .time{
+        padding-left: 10px;
+        display: flex ;
+        gap: 100px;
+        font-weight: 100;
+      }
+      button{
+        font-size: larger;
+        background-color: red;
+        border-radius: 0 0 10px 10px;
+        border: none;
+        color: aliceblue;
+        width: 100%;
+        padding: 6px;
+      }
+      img{
+        border-radius: 10px 10px 0 0;
+      }
     </style>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-    <!-- <h1 style="color: red;">Hello World</h1> -->
-    <h1>Hello World</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-    </header>
-    <section id="sec-1">
-        <h1>Hello maya</h1>
-    </section>
-    <section id="sec-2">
-        <h1>Hi</h1>
-    </section>
-    <div class="nx">
-        <h1>Prajwal sir</h1>
-        <p>Hi everyone</p>
+  </head>
+  <body>
+    <div class="container">
+      <img width="300px" height="260px" src="MOMO..jpg" alt="Image">
+      <div class="details">
+        <h1>Jhol Mo:Mo</h1>
+        <div class="time">
+            <strong>15 min</strong> <strong>serves:4</strong>
+        </div>
+        <img height="10" src="star1.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, laborum.</p>
+      </div>
+      <button>LETS COOK!</button>
     </div>
-</body>
+  </body>
 </html>
