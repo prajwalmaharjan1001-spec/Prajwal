@@ -205,7 +205,20 @@
         margin: 10px 12px;
         background-image: url('https://www.w3schools.com/w3images/map.jpg');
       }
+       @media(max-width: 450px){
+        header{
+            flex-direction: column;
+            background-color: blue;
+            gap: 10px;
+        }
+      }
+      @media(max-width: 450px){
+        body{
+          background-color: aqua;
+        }
+      }
     </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
   <body>
@@ -331,5 +344,10 @@
     <div class="banner">
 
     </div>
+    <script>
+      const rev = ScrollReveal();
+      rev.reveal('.logo', { delay: 500, origin: 'left', duration: 500, distance: '50px' });
+      // rev.reveal('.img',{ delay:500, interval:200})
+    </script>
   </body>
 </html>
