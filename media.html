@@ -28,12 +28,18 @@
       nav {
         display: flex;
         gap: 20px;
+        /* &:hover{
+          background-color: red;
+        } */
       }
 
       nav a {
         text-decoration: none;
         font-size: 17px;
         color: black;
+         &:hover{
+          background-color: red;
+        }
       }
 
       .dis-section {
@@ -117,6 +123,11 @@
   </head>
 
   <body>
+    <h5>Some text to enable scrolling</h5>
+
+    <button onclick="handelChange()">Click</button>
+
+
 
     <header>
       <div class="logo">
@@ -185,6 +196,13 @@
       rev.reveal('.logo', { delay: 500, origin: 'left', duration: 500, distance: '50px' });
       rev.reveal('.house',{ delay:500,interval:200})
       // rev.reveal('.houses', { delay: 1000, origin: 'left' });
+      const h5Element = document.querySelector('h5');
+
+            const handelChange = () => {
+        h5Element.style.fontSize = '50px';
+        h5Element.style.color = 'blue';
+
+      }
   </script>
 
 
