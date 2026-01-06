@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bx h1:hover {
+            background-color: red;
+        }
+        .bx p::before{
+            content: 'Hello';
+            color: red;
+        }
+        .bx p::after{
+            content: 'Bye';
+            color: green;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="bx">
+       <h1>Hello sir</h1>
+       <h2>Hi</h2>
+       <p>Lorem ipsum <span>dolor</span>, sit amet consectetur adipisicing.</p>
+    </div>
+</body>
+</html>
