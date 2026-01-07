@@ -93,9 +93,88 @@
 // carName.speed();
 // console.log(carName.model);
 
-console.log(Math.PI);
-console.log(Math.sqrt(4));
-console.log(Math.cbrt(27));
-console.log(Math.max(11, 99, 77, 66, 4));
-console.log(`The max value is ${Math.max(11, 99, 77, 66, 4)}`);
-console.log(Math.min(11, 99, 77, 1, 66, 4, 0.5));
+// console.log(Math.PI);
+// console.log(Math.sqrt(4));
+// console.log(Math.cbrt(27));
+// console.log(Math.max(11, 99, 77, 66, 4));
+// console.log(`The max value is ${Math.max(11, 99, 77, 66, 4)}`);
+// console.log(Math.min(11, 99, 77, 1, 66, 4, 0.5));
+
+// const rating = 9.444;
+// const random = Math.random() * 100; //100 + 1 gariyo vane 1-100 samma aauxa
+
+// console.log(random);
+// console.log(Math.trunc(random));
+
+// console.log(Math.floor(rating));
+// console.log(Math.ceil(rating));
+// console.log(Math.round(rating));
+
+// const age = 55.586468465;
+
+// console.log(age.toFixed(2));
+
+// let name;
+// const isLogin = null;
+
+// console.log(name);
+// console.log(isLogin);
+
+
+//  let a = 0;
+
+// const c = ++a;
+// a++//a = a+1
+
+// console.log(c);
+
+
+// comparison operator, ternary operator, if-else operator, switch-case loops
+
+// let a = 100;
+
+// // a = a + 90;
+// a **= 2;//power
+
+// console.log(a);
+
+// const sum = 90 + 100 * 10;
+
+// console.log(sum);
+
+
+// const a = 90;
+// const b = 100;
+
+
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(b % a);
+// console.log(a ** b);
+
+// const c = '90';
+
+// console.log(a === c);
+
+// console.log(a > b);
+// console.log(a < b);
+// console.log(a >= b);
+// console.log(a <= b);
+// console.log(b === a);
+// console.log(a !== b);
+
+
+// const a = 90;
+// const b = 100;
+
+// console.log(a > b || a < b);
+// console.log(a > b && a < b);
+
+const age = 50;
+
+
+const m = age > 3  ? 'senior' : age < 20 ? 'junior': age == 20 ? 'normal' : 'senior';
+
+console.log(m);
