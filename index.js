@@ -172,9 +172,114 @@
 // console.log(a > b || a < b);
 // console.log(a > b && a < b);
 
-const age = 50;
+// const age = 50;
 
 
-const m = age > 3  ? 'senior' : age < 20 ? 'junior': age == 20 ? 'normal' : 'senior';
+// const m = age > 50  ? 'senior' : age < 20 ? 'junior': age == 20 ? 'normal' : 'senior';
 
-console.log(m);
+// console.log(m);
+
+// const age = 40;
+
+// if(age>50){
+//     console.log('Hello');
+// }else{
+//     console.log('Hi');
+// }
+
+
+// const age = 90;
+
+// if(age<50){
+//     console.log('Hello');
+// }else if(age > 50){
+//     console.log('Hi');
+// }elseif(age === 90){
+//     console.log(sello);
+// }
+
+// const age = 50;
+
+// if(age>=50){
+//     console.log('senior');
+// }else if(age < 20){
+//     console.log('junior');
+// }else{
+//     console.log('normal');
+// }
+
+// const netSalary = 50000;
+// const expenses = 35000;
+
+// if(netSalary>expenses){
+//     console.log(`you have saves ${netSalary-expenses} this month`);
+// }else if(expenses>netSalary){
+//     console.log(`you have loss ${expenses-netSalary} this month`);
+// }else{
+//     console.log('Balance hasn\'t changed');
+// }
+
+// const number = 91;
+
+// if(number % 2 === 0){
+//     console.log('even');
+// }else{
+//     console.log('odd');
+// }
+
+
+// const age = 0;//false value
+
+// if(age){
+//     console.log('true value');
+// }
+
+// const weekday = '';
+
+// switch (weekday) {
+//     case'sunday':
+//     console.log('This is sunday');
+//     break;
+//     case'monday':
+//     console.log('This is monday');
+//     break;
+//     case'tuesday':
+//     console.log('This is tuesday');
+//     break;
+//     case'wednesday':
+//     console.log('This is wed');
+//     break;
+//     case'thursday':
+//     console.log('This is thursday');
+//     break;
+//     case'friday':
+//     console.log('This is friday');
+//     break;
+//     case'saturday':
+//     console.log('This is saturday');
+//     break;
+//      default:
+//     console.log('please provide day');
+// }
+
+
+const calc = 'divide';
+const a = 50;
+const b = 30;
+
+switch(calc){
+    case('add'):
+    console.log(a + b);
+    break;
+    case('sub'):
+    console.log(a - b);
+    break;
+    case('multiply'):
+    console.log(a * b);
+    break;
+    case('divide'):
+    console.log(a / b);
+    break;
+    default:
+        console.log('Please provide method');
+}
