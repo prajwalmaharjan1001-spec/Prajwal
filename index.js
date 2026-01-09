@@ -263,23 +263,120 @@
 // }
 
 
-const calc = 'divide';
-const a = 50;
-const b = 30;
+// const calc = 'divide';
+// const a = 50;
+// const b = 30;
 
-switch(calc){
-    case('add'):
-    console.log(a + b);
-    break;
-    case('sub'):
-    console.log(a - b);
-    break;
-    case('multiply'):
-    console.log(a * b);
-    break;
-    case('divide'):
-    console.log(a / b);
-    break;
-    default:
-        console.log('Please provide method');
-}
+// switch(calc){
+//     case('add'):
+//     console.log(a + b);
+//     break;
+//     case('sub'):
+//     console.log(a - b);
+//     break;
+//     case('multiply'):
+//     console.log(a * b);
+//     break;
+//     case('divide'):
+//     console.log(a / b);
+//     break;
+//     default:
+//         console.log('Please provide method');
+// }
+
+// let i = 0;         //while loop
+// while (i < 20) {
+//     i++;
+//     console.log(`Hello ${i}`);
+
+//      if(i % 2 === 0){
+//        console.log('This is even number');
+//       }else{
+//          console.log('This is odd number');
+//     }
+// }
+
+//Do-While loop
+
+// let i = 0;
+
+// do{
+//     i++;
+//     console.log('Hello world');
+// }while(i<10)
+
+// let sum=0;
+// for (let i = 1; i <= 15; i++) {
+//   console.log(`hello jee ${i} `);
+//   sum=sum+i;
+//   console.log(sum);
+// }
+
+
+// for(i=0;i<=15;i++){
+//    if(i%3 ===0 && i%5 ===0){
+//     console.log("fizz buzz");
+//    }
+//    else if(i%3 === 0){
+//     console.log("fizz");
+//    }
+//    else if(i%5 === 0){
+//     console.log("buzz");
+//    }
+//    else{
+//     console.log(i);
+//    }
+// }
+
+// for(i=0;i<=15;i++){
+//     if(i % 2 === 0){
+//        console.log(`${i} even`);
+//       }else{
+//          console.log(`${i} odd`);
+//     }
+// }
+
+// let oddtotal = 0;
+// let eventotal = 0;
+// for (i=0;i<=15;i++){
+//     if(i%2 == 0){
+//         eventotal += i;
+//         console.log(`${i} is even number`);
+//     }
+//     else{
+//          oddtotal += i;
+//         console.log(`${i} is odd number`);
+//     }
+// }
+// console.log(`The sum of Even Number is: ${eventotal}`);
+// console.log(`The sum of Odd Number is: ${oddtotal}`);
+
+// const persons = [11, 22, 33, 44, 55, 66, 77];
+// let sum=0;
+
+// //for in -- for off
+
+// // for (let i in persons) {
+// //   //console.log('hello');
+// //   console.log(i);
+
+// // }
+
+// for (let i of persons) {
+//     console.log(i);
+//     sum=sum+i;
+    
+// }
+// console.log(`The sum of array is ${sum}`);
+
+
+const persons = [11, 22, 33, 44];
+
+
+
+
+// persons.push(55, 66);
+//persons.pop();
+//persons.shift();
+// persons.unshift(9, 7);
+console.log(persons.concat(9,7,6).concat([1,2,3,5]));
