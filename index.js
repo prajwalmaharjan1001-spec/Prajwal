@@ -370,7 +370,7 @@
 // console.log(`The sum of array is ${sum}`);
 
 
-const persons = [11, 22, 33, 44];
+// const persons = [11, 22, 33, 44];
 
 
 
@@ -379,4 +379,56 @@ const persons = [11, 22, 33, 44];
 //persons.pop();
 //persons.shift();
 // persons.unshift(9, 7);
-console.log(persons.concat(9,7,6).concat([1,2,3,5]));
+// console.log(persons.concat(9,7,6).concat([1,2,3,5]));
+
+
+//const persons = [11, 22, 33, 44];
+
+// console.log(persons.includes(90));
+//console.log(persons.length);
+//console.log(persons.reverse());
+//console.log(persons.indexOf(22));
+//console.log(persons.join('-'));
+
+// const func = () => {
+//     console.log('hello');
+// }
+// func();
+
+
+// somejee();
+// function somejee(){
+//     console.log('hello jee');
+// }
+
+// somejee();
+
+
+// function giveSum(a,b){
+//    console.log(a + b);
+// }
+// giveSum(80,90)
+
+// function git(username){
+//     console.log(`Good morning ${username}!!!`);
+
+// }
+
+// git('Prajwal');
+
+// function giveSum(a = 90) {
+//   console.log(a);
+// }
+
+// giveSum(100);
+
+
+// let sum=0;
+// function giveSum(numbers) {
+//     for (let i of numbers) {
+//     sum=sum+i;
+//     }
+//     console.log(`The sum of the array is ${sum}`);
+// }
+
+// giveSum([11,22,33,44,55,66]);
