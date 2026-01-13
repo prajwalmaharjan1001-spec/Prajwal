@@ -432,3 +432,94 @@
 // }
 
 // giveSum([11,22,33,44,55,66]);
+
+
+
+// console.log(Math.max(11, 99, 77, 66, 4));
+// console.log(`The max value is ${Math.max(11, 99, 77, 66, 4)}`);
+
+// const a = [11, 22];
+
+// const b = [33, 44];
+
+// console.log(...a);
+
+
+
+// //Write a function that finds the largest number in an array.
+// function giveMax(numbers) {
+//    console.log(`The max of the array is ${Math.max(...numbers)}`);
+// }
+
+// giveMax([11,22,33,44,55,66,99]);
+
+// const v = 'aeijkl'
+
+
+// const vowel = ['a', 'e', 'i', 'o', 'u'];
+// let count = 0;
+// function countVowel(word) {
+
+//   const chars = word.split('');
+//   for (let c of chars) {
+//     const isExist = vowel.includes(c);
+//     if (isExist) {
+//       count++;
+//     }
+//   }
+
+//   console.log(count);
+
+
+
+// }
+
+// countVowel(v);
+
+// const vowel = ['a','e','i','o','u'];
+// let count = 0;
+// function countVowel(word){
+
+//     const chars = word.split('');
+//      for (let c for chars) {
+//         const isExist = vowel.includes(c);
+//         if (isExist){
+//             count++;
+//         }
+//      }
+// }
+
+// console.log(count);
+
+
+// const greetSome = (personName) => {
+//   return `hello jee how are you ${personName}?`;
+// }
+
+
+// const m = greetSome('Prajwal');
+
+
+// console.log(m);
+
+// const askSomething = (person) => {
+//     return `Hello ${person} \nWould you like to have some tea ?`;
+// }
+// const n = askSomething('Prajwal');
+
+// console.log(n)
+
+///////////////////////////CALL BACK FUNCTION!!!!!!!!!!!/////////////
+
+const parentFunc = (func) =>{
+    func('Hello');
+}
+const childFunc = () =>{
+    console.log('Hello i am child');
+}
+
+// parentFunc(childFunc);
+parentFunc((m) => {
+  console.log(m);
+  console.log('hello jee')
+});
