@@ -511,15 +511,15 @@
 
 ///////////////////////////CALL BACK FUNCTION!!!!!!!!!!!/////////////
 
-const parentFunc = (func) =>{
-    func('Hello');
-}
-const childFunc = () =>{
-    console.log('Hello i am child');
-}
+// const parentFunc = (func) =>{
+//     func('Hello');
+// }
+// const childFunc = () =>{
+//     console.log('Hello i am child');
+// }
 
-// parentFunc(childFunc);
-parentFunc((m) => {
-  console.log(m);
-  console.log('hello jee')
-});
+// // parentFunc(childFunc);
+// parentFunc((m) => {
+//   console.log(m);
+//   console.log('hello jee')
+// });
