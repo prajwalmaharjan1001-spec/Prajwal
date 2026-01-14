@@ -523,3 +523,155 @@
 //   console.log(m);
 //   console.log('hello jee')
 // });
+
+
+////////////////////////////ARRAY///////////////////////
+////METHODS////
+
+// const number=[11,22,33,44,55];
+
+// let total=0;
+// number.forEach((a)=>{
+//     console.log(a);
+//     total=total+a;
+
+// });
+// console.log(total);
+// const number=[11,22,33,44,55];
+
+// const number=[11,22,33,44,55];
+
+// let even=0;
+// let odd=0;
+// number.forEach((a)=>{
+//     console.log(a);
+//     if(a%2==0){
+//         console.log('even');
+//     }else{
+//         console.log('odd');
+//     }
+
+// });
+
+// const numbers = [11, 22, 33, 44];
+
+
+
+// const some = numbers.map((n, i) => {
+//   return n * 2;
+// });
+
+
+// console.log(some);
+
+// const numbers = [11, 22, 33, 44];
+
+
+
+// const some = numbers.map((n, i) => {
+//     if(n===44){
+//         return 100;
+//     }
+//   return n;
+// });
+
+
+// console.log(some);
+
+// const numbers = [11, 22, 33, 44];
+
+
+
+// const some = numbers.map((n, i) => {
+//   return n === 44 ? 100 : n;
+// });
+
+
+// console.log(some);
+
+
+//👉 Use map() to create a new array where every number is doubled.
+// onst nums = [1, 2, 3, 4, 5];
+// const some = nums.map((n, i) => {
+//     return n ** 2;
+// });
+
+// console.log(some);c
+
+
+//👉 Use map() to make all strings UPPERCASE
+// const fruits = ["apple", "banana", "mango"];
+// const a = fruits.map((a,b) => {
+//     return a.toUpperCase();
+// });
+// console.log(a);
+
+
+// 👉 Return a new array where 10 is added to every value.
+// const marks = [30, 45, 50, 60];
+// const a = marks.map((n,i)=>{
+//     return n+10;
+// })
+// console.log(a);
+
+
+// const numbers = [11, 22, 33, 44];
+
+
+// const findJ = numbers.find((n, i) => {
+// //   if(n===22){
+// //     return 1;
+// //   }
+
+//   return n > 30;
+
+// });
+
+// console.log(findJ);
+
+//Find the first even number
+
+// const numbers = [1, 3, 5, 6, 8]
+// const findJ = numbers.find((n, i) => {
+//   return n%2 === 0;
+
+// });
+
+// console.log(findJ);
+
+//Find the first number greater than 50
+
+// const numbers=[10, 45, 60, 70]
+//  const greaterNumber = numbers.find((n, i) => {
+//    return n > 50;
+
+//  });
+
+//  console.log(greaterNumber);
+
+//Find the first word with length > 4
+
+// const words=["cat", "dog", "tiger", "lion"];
+// const b = words.find((a) => {
+//     return a.length > 4;
+// })
+// console.log(b);
+
+//Filter all odd numbers
+
+// const number=[1, 2, 3, 4, 5, 6];
+
+// const oddnumber = number.filter((n,i) => {
+//       return n%2===1;
+// });
+
+// console.log(oddnumber);
+
+
+//Filter words that contain "a"
+
+const words=["apple", "ball", "cat", "dog"];
+const noa=words.filter((a)=>{
+    return a.includes(a);
+})
+console.log(noa);
