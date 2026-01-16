@@ -672,6 +672,6 @@
 
 const words=["apple", "ball", "cat", "dog"];
 const noa=words.filter((a)=>{
-    return a.includes(a);
-})
+    return a.includes('a');
+});
 console.log(noa);
