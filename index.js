@@ -670,8 +670,170 @@
 
 //Filter words that contain "a"
 
-const words=["apple", "ball", "cat", "dog"];
-const noa=words.filter((a)=>{
-    return a.includes('a');
+// const words=["apple", "ball", "cat", "dog"];
+// const noa=words.filter((a)=>{
+//     return a.includes('a');
+// });
+// console.log(noa);
+
+
+// const numbers=[11,22,33,44];
+
+
+// const redN = numbers.reduce((a, b,) => {
+
+//   return a;
+
+// });
+
+
+// console.log(redN);
+
+// const numbers=[11,22,33,44];
+
+
+// const redN = numbers.reduce((a, b,) => {
+
+// //   return a>b?a:b;  // GREATER NUMBER//
+//   return a<b?a:b;  //SMALLER NUMBER//
+
+// });
+
+
+// console.log(redN);
+
+
+//Convert this array into a single string using reduce().
+
+// const words=["Hello", " ", "World", "!"];
+
+// const w = words.reduce((a,b)=>{
+//     return a+b;
+// });
+
+// console.log(w);
+
+
+//Use reduce() to count the total number of elements in an array.
+
+// const word=["apple", "banana", "mango"];
+// const countWord=word.reduce((a,b)=>{
+//     return a.count();
+// });
+// console.log(countWord);
+
+
+
+
+//ARRAY DISTURCTING
+// const [r,s,h]=['ram','shyam','hari'];
+
+// console.log(r,s,h);
+
+
+// Destructure and store values in variables: firstColor, secondColor, thirdColor
+// const [firstColor,secondColor,thirdColor] = ["red", "green", "blue"];
+// console.log(firstColor,secondColor,thirdColor);
+
+// Destructure to get only 10 and 30 (skip 20)
+// const [n1, ,n3] = [10, 20, 30, 40];
+// console.log(n1,n3);
+
+
+// SWAP VALUE
+
+// let a=10;
+// let b=5;
+
+// [a,b]=[b,a]
+
+// console.log(a,b)
+
+
+// const person = {
+//   name: 'ram',
+//   age: 90,
+//   habits: ['dance', 'sing'],
+//   sleep: function () {
+//     console.log('ram is sleeping');
+//   }
+// };
+// person.salary=90000;
+// person.age=99;
+// delete person.habits
+// console.log(person);
+
+
+// const car ={
+//     name: 'toyota',
+//     date: '2022/5/6',
+//     model: ['supra','bla'],
+//     speed: function () {
+//         console.log('It is running');
+//     }
+// };
+// console.log(car.name);
+
+
+const persons = [
+  {
+    id: 1,
+    name: 'ram',
+    gender: 'male',
+    age: 50
+  },
+  {
+    id: 2,
+    name: 'rita',
+    gender: 'female',
+    age: 90
+  },
+  {
+    id: 3,
+    name: 'shyam',
+    gender: 'male',
+    age: 70
+  },
+  {
+    id: 4,
+    name: 'sita',
+    gender: 'male',
+    age: 60
+  }
+];
+
+// persons.forEach((a)=>{
+//     console.log(a.name.toUpperCase());
+//     // return p.name.toUpperCase();
+// });
+
+// persons.forEach((b) => {
+//     console.log(b.age)
+// });
+
+persons.forEach(p => {
+  const isSenior = p.age >= 60;
+  if(isSenior) {
+    console.log('true');
+  } else {
+    console.log('false');
+  }
 });
-console.log(noa);
+
+// persons.forEach(p => {
+//   console.log(`${p.name} is ${p.age} years old`);
+// });
+
+// let maleCount = 0;
+// let femaleCount = 0;
+
+// persons.forEach(p => {
+//   if (p.gender === 'male') maleCount++;
+//   if (p.gender === 'female') femaleCount++;
+// });
+
+// console.log(maleCount, femaleCount);
+
+
+// console.log(p.age)
+// console.log(persons)
