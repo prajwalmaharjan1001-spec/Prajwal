@@ -775,32 +775,32 @@
 // console.log(car.name);
 
 
-const persons = [
-  {
-    id: 1,
-    name: 'ram',
-    gender: 'male',
-    age: 50
-  },
-  {
-    id: 2,
-    name: 'rita',
-    gender: 'female',
-    age: 90
-  },
-  {
-    id: 3,
-    name: 'shyam',
-    gender: 'male',
-    age: 70
-  },
-  {
-    id: 4,
-    name: 'sita',
-    gender: 'male',
-    age: 60
-  }
-];
+// const persons = [
+//   {
+//     id: 1,
+//     name: 'ram',
+//     gender: 'male',
+//     age: 50
+//   },
+//   {
+//     id: 2,
+//     name: 'rita',
+//     gender: 'female',
+//     age: 90
+//   },
+//   {
+//     id: 3,
+//     name: 'shyam',
+//     gender: 'male',
+//     age: 70
+//   },
+//   {
+//     id: 4,
+//     name: 'sita',
+//     gender: 'male',
+//     age: 60
+//   }
+// ];
 
 // persons.forEach((a)=>{
 //     console.log(a.name.toUpperCase());
@@ -811,14 +811,14 @@ const persons = [
 //     console.log(b.age)
 // });
 
-persons.forEach(p => {
-  const isSenior = p.age >= 60;
-  if(isSenior) {
-    console.log('true');
-  } else {
-    console.log('false');
-  }
-});
+// persons.forEach(p => {
+//   const isSenior = p.age >= 60;
+//   if(isSenior) {
+//     console.log('true');
+//   } else {
+//     console.log('false');
+//   }
+// });
 
 // persons.forEach(p => {
 //   console.log(`${p.name} is ${p.age} years old`);
@@ -837,3 +837,237 @@ persons.forEach(p => {
 
 // console.log(p.age)
 // console.log(persons)
+
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.func = function() {
+//     console.log('hello');
+    
+//   }
+// };
+
+
+// const person1= new person('Ram',90);
+// const person2=new person('Shyam',55);
+// console.log(person1,person2);
+
+
+
+// const person={
+//     firstName:'Prajwal',
+//     lastName:'Maharjan',
+//     id:5555,
+//     fullName: function (){
+//         console.log(this.firstName,this.lastName);
+//     }
+// }
+// person.fullName();
+
+// const person={
+//     firstName:'Prajwal',
+//     lastName:'Maharjan',
+//     id:5555,
+//     fullName: () => {
+//         console.log(this.Audio);
+//     }
+// }
+// person.fullName();
+
+
+// function Person(name,age){
+//     this.name = name;
+//     this.age = age;
+//     this.func = function () {
+//         console.log('hello')
+//     }
+// }
+
+// const person1 = new Person('Ram', 90);
+// const person2 = new Person('shyam', 90);
+// person1.func();
+// console.log(person1,person2);
+
+
+// const d = new Date();
+
+// console.log(d.getFullYear);
+
+// function Person(name,age) {
+//     this.name=name;
+//     this.age=age;
+// }
+
+// const per=new Person('Ram', 90);
+
+// console.log(per);
+
+
+// class Bank{
+
+//     constructor(name,branch){
+//          this.name = name;
+//          this.branch = branch;
+//     }
+
+//     getdata(){
+//         console.log(`Welcome to ${this.name} located in ${this.branch}`)
+//     }
+// }
+// const b= new Bank('Nabil Bank','Bagbazar');
+// b.getdata()
+// console.log(b);
+
+
+
+
+///////OOP//////
+//inheritance, encapsulation, abstraction, polymorphion
+// class Person {
+
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   getData() {
+//     console.log('hello jee');
+
+//   }
+
+// }
+
+
+// class A extends Person{
+
+// }
+
+// const a = new A('ram',50);
+
+// console.log(a.age);
+
+
+
+// class Bank{
+//     #balance=0;
+//     constructor(personName){
+//         this.name = personName;
+
+//     }
+
+//     deposit(amount){
+//      this.#balance += amount;
+//     }
+
+//     withdraw(amount){
+//         this.#balance -= amount;
+//     }
+
+//     getBalance(){
+//         return this.#balance;
+//     }
+// }
+
+
+// const m = new Bank();
+
+// m.deposit(100000);
+// m.withdraw(50000);
+// console.log(m.getBalance());
+
+
+// class Car{
+
+//    start(){
+//     this.#engine();
+//     this.#injectfuel();
+//     console.log('car started');
+    
+//    }
+
+//     #injectfuel(){
+//         console.log('Fuel injected');
+//     }
+
+//     #engine(){
+//         console.log('engine started');
+        
+//     }
+
+// }
+
+
+// const car= new Car();
+
+// car.start();
+
+
+
+// class Animal {
+//     speak(){
+//         console.log('Animal makes sounds');
+        
+//     }
+// }
+
+// class Dog extends Animal{
+//     speak(){
+//         console.log('Dog barks');
+        
+//     }
+// }
+
+// class Cat extends Animal{
+//     speak(){
+//        console.log('cat meows');
+       
+//     }
+// }
+
+// const dog = new Dog();
+// const cat = new Cat();
+
+// dog.speak();
+// cat.speak();
+
+
+
+// function sum(a,b){
+//     return a+b;
+// }
+
+// console.log(sum(5,2));
+
+
+// function checkOddEven(number){
+//     if(number%2 === 0){
+//         console.log(`${number} is Even number`);
+//     }else{
+//         console.log(`${number} is Odd number`);
+        
+//     }
+// }
+// checkOddEven(5);
+
+// function str(word){
+//     return word.length;
+// }
+// console.log(str('prajwal'));
+
+// function largestNumber(array){
+//      return Math.max(...array);
+// }
+
+// console.log(largestNumber([1,2,3,6,5,7]));
+
+
+function sumArray(arr) {
+  return arr.reduce((sum, num) => sum + num, 0);
+}
+
+function total(array) {
+    return array.reduce((sum,num) => sum + num,0);
+}
+
+console.log(total([1,2,3,6,5]));
