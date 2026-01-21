@@ -1062,12 +1062,60 @@
 // console.log(largestNumber([1,2,3,6,5,7]));
 
 
-function sumArray(arr) {
-  return arr.reduce((sum, num) => sum + num, 0);
+
+// function total(array) {
+//     return array.reduce((sum,num) => sum + num,0);
+// }
+
+// console.log(total([1,2,3,6,5]));
+
+//only positive number
+// const number =[1,2,3,-5,-6];
+// const positiveNumber=number.filter((n)=> n>0);
+//     console.log(positiveNumber)
+
+
+
+
+// const n = [11, 22, 33, 44, 55];
+//  n[0]=99;
+
+//  console.log(n);
+ 
+
+// let a = 90;
+// const b = a;
+// a=100;
+
+// console.log(b);
+
+
+// let person = {
+//     a:500,
+//     b:100
+// };
+
+// let c= person;
+
+// person.b= 200;
+
+// console.log(c);
+
+
+// const func = () => {
+//     const h1Elements = document.querySelector('h1');
+//     h1Elements.style.color = 'red';
+// }
+
+const foc = () => {
+    const inputElements = document.querySelector('input');
+    inputElements.focus();
 }
 
-function total(array) {
-    return array.reduce((sum,num) => sum + num,0);
-}
 
-console.log(total([1,2,3,6,5]));
+const func = () => {
+    const h1Elements = document.querySelector('#sec-3');
+    h1Elements.scrollIntoView({
+        behavior:'smooth',
+    });
+}
