@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@theme{
+    /* --color-*: initial;  ALL color gayab hunxa
+
+
+
+    --text-dl:20px; */
+    /* --color-headColor: red;
+    
+    --color-red:green; */
+    --animate-scaly: ani 2s linear infinite;
+
+
+    @keyframes an
+    i {
+        20%{
+            tranform: scale(1.2);
+        }
+        40%{
+            tranform: scale(1.4);
+        }
+        60%{
+            tranform: scale(1.6);
+        }
+        80%{
+            tranform: scale(1.8);
+        }
+        100%{
+            tranform: scale(12);
+        }
+    }
+
+}
+
+
+@layer base{
+    h1{
+        @apply text-3xl font-extrabold;
+    }
+    h2{
+        @apply text-2xl font-extrabold
+    }
+}
+
+@layer components{
+      .card {
+    @apply w-full max-w-sm bg-white p-5  border-gray-200 rounded-lg overflow-hidden;
+  }
+}
+
+@utility flexy{
+    @apply flex justify-between items-center gap-3;
+}
