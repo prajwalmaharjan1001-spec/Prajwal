@@ -29,7 +29,7 @@ export default function home() {
       <p>{a.email}</p>
       <Avatar>
         <AvatarImage src={a.avatar} />
-        <AvatarFallback>Wait</AvatarFallback>
+        <AvatarFallback>CN</AvatarFallback>
       </Avatar>
       </div>
       )
