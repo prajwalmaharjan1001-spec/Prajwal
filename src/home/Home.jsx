@@ -1,72 +1,33 @@
-import { faker } from "@faker-js/faker";
-import { Button } from '@/components/ui/button';
-import React, { useState } from 'react'
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import MealCategoryList from '@/meal/MealCategoryList'
+import React from 'react'
 
-export default function home() {
-
- const [data, setData] = useState([]);
-
- const handleData = () => {
-      const newUser = {
-      userId: faker.string.uuid(),
-      username: faker.internet.username(),
-      email: faker.internet.email(),
-      avatar: faker.image.avatar()
-    };
-
-  setData((prev) => [...prev,newUser])
-
- }
+export default function Home() {
   return (
-    <div>
-     
-     <Button onClick={handleData} >Add User</Button>
-    {data.map((a)=>{
-      return (
-      <div key={a.userId}>
-      <h1>{a.username}</h1>
-      <p>{a.email}</p>
-      <Avatar>
-        <AvatarImage src={a.avatar} />
-        <AvatarFallback>CN</AvatarFallback>
-      </Avatar>
-      </div>
-      )
-    })}
+    <div className='p-5 '>
+     <div className='grid grid-cols-4 items-center'>
+      <img src="https://www.themealdb.com/images/meal-icon.png" alt="" />
 
+       <div className='text-white text-center col-span-2 space-y-4'>
+        <h1>Welcome to TheMealDB </h1>
+        <p>Welcome to TheMealDB: An open, crowd-sourced database of recipes from around the world.
+We offer a free recipe API for anyone wanting to use it, with additional premium features if required</p>
+       </div>
+
+      <img src="https://www.themealdb.com/images/meal-icon.png" alt="" />
+     </div>
+
+     <div className='flex justify-center mb-10'>
+      <form className='max-w-2xl'>
+        <input 
+        className='bg-white px-2 w-100'
+        type="text" placeholder='Search' />
+      </form>
+     </div>
+
+
+
+      <MealCategoryList />
+      
     </div>
   )
 }
-
-
-
-
-
-// export default function home() {
-//   const persons = [
-//     {
-//       id: 1,
-//       name: 'ram',
-//       age: 90
-//     },
-//     {
-//       id: 2,
-//       name: 'shyam',
-//       age: 70
-//     }
-//   ];
-//   return (
-//     <div>
-//       {persons.map((a)=>{
-//         return(
-//           <div key={a.id}>
-//             <h1>{a.name}</h1>
-//             <p>{a.age}</p>
-
-//           </div>
-//         )
-//       })}
-//     </div>
-//   )
-// }

@@ -33,7 +33,11 @@
     }
 
 }
+body{
+   
+  background-color: #1E1B17;
 
+}
 @layer base{
     h1{
         @apply text-3xl font-bold;
