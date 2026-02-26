@@ -1,7 +1,12 @@
 import MealCategoryList from '@/meal/MealCategoryList'
 import React from 'react'
+import {getTotal} from "../utils/getTotal.js";
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const nav = useNavigate();
+
+
   return (
     <div className='p-5 '>
      <div className='grid grid-cols-4 items-center'>
@@ -17,8 +22,11 @@ We offer a free recipe API for anyone wanting to use it, with additional premium
      </div>
 
      <div className='flex justify-center mb-10'>
-      <form className='max-w-2xl'>
+      <form action={(formData)=>{
+       nav(`/search?s=${formData.get('seatch')}`)
+      }} className='max-w-2xl'>
         <input 
+        name="search"
         className='bg-white px-2 w-100'
         type="text" placeholder='Search' />
       </form>

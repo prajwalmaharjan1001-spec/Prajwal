@@ -1,6 +1,4 @@
-import { baseUrl } from "@/lib/constants";
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,34 +9,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import { useApi } from "@/utils/apiHook";
 
 
 export default function MealCategoryList() {
-  const [data, setData] = useState();
-  const [load, setLoad] = useState(false);
-  const [err, setErr] = useState();
-
   const nav = useNavigate();
 
-  const getData = async () => {
-    try {
-      setLoad(true);
-
-      const response = await axios.get(`${baseUrl}/categories.php`);
-      setData(response.data);
-      setLoad(false);
-    } catch (err) {
-      setErr(err.message);
-      setLoad(false);
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const [data, load, err] = useApi('categories.php');
 
   if (load) {
-    return <h1>Loading.....</h1>;
+    return <h1>Please wait.....</h1>;
   }
   if (err) {
     return <h1>{err}</h1>;

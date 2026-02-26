@@ -1,31 +1,16 @@
-import React from 'react'
+
+import { useApi } from "@/utils/apiHook";
+
+import { useParams } from "react-router-dom"
+
 
 export default function Meal() {
-   const {label} = useParams();
-   const [data, setData] = useState();
-     const [load, setLoad] = useState(false);
-     const [err, setErr] = useState();
+  const { id } = useParams();
 
-     const getData = async () => {
-    try {
-      setLoad(true);
+  const [data, load, err] = useApi('lookup.php', {i: id});
 
-      const response = await axios.get(`${baseUrl}/lookup.php`, {
-        params: {
-          i: id
-        }
-      });
-      setData(response.data);
-      setLoad(false);
-    } catch (err) {
-      setErr(err.message);
-      setLoad(false);
-    }
-  };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  
 
   if (load) {
     return <h1>Loading.....</h1>;
@@ -34,9 +19,21 @@ export default function Meal() {
     return <h1>{err}</h1>;
   }
 
+  console.log(data);
   return (
-    <div>
-      
+    <div className="text-white">
+      {data && data.meals.map((meal)=>{
+        return <div key={meal.idMeal}  className="space-y-3">
+          <h1>{meal.strMeal}</h1>
+          <img className="h-64"
+          src={meal.strMealThumb} alt="" />
+          <h2>Categories: {meal.strCategories}</h2>
+          <h2>Area: {meal.strArea}</h2>
+          <h2>Instruction: {meal.strInstructions}</h2>
+          <iframe width="" height=""
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+      })}
     </div>
   )
 }
