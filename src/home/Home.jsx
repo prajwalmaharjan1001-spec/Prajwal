@@ -23,7 +23,7 @@ We offer a free recipe API for anyone wanting to use it, with additional premium
 
      <div className='flex justify-center mb-10'>
       <form action={(formData)=>{
-       nav(`/search?s=${formData.get('seatch')}`)
+       nav(`/search?s=${formData.get('search')}`)
       }} className='max-w-2xl'>
         <input 
         name="search"
